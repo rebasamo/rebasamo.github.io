@@ -1,0 +1,25 @@
+
+
+Xavier Rebasa Moll:
+  name: "Xavier Rebasa Moll"
+  bio: ""
+  avatar: "/assets/images/profile.jpg"
+  facebook: xavier.rebasamoll
+  linkedin: xavier-rebasa-moll-b5723715b 
+  email: rebasamo@esat-alumni.com
+  links:
+    - label: "+34 664471449"
+      icon: "fas fa-fw fa-phone-square"
+      url: "tel:+34 664471449"
+
+
+  custom:
+    - title: "Languages"
+
+    - language: "Spanish"
+    - level: "Native"
+    - language: "Catalan"
+    - level: "Native"
+    - language: "English"
+    - level: "First Certificate Cambridge | B2"
+    - level: "IELTS 7.5 Band Score | CEFR: C1"
