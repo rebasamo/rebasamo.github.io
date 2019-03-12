@@ -1,0 +1,135 @@
+---
+layout: single
+title:  "3D Engine"
+date:   2019-02-08 23:26:41 +0100
+categories: jekyll update
+author: Xavier Rebasa Moll
+
+toc: true
+toc_label: In This Page
+toc_sticky: true
+
+header:
+  image: /assets/PostsAssets/Engine3D/Main.png
+  teaser: /assets/PostsAssets/Engine3D/3DEngine-Shadows.png
+---
+
+First time in contact with a 3D Engine code. Pretty intensive work and a lot of code rewritten during the last year on ESAT. This engine have been the result of the work with [Imanol Saenz Aguirre](#!).
+
+## Demos
+
+Xavier Rebasa Moll
+<iframe width="560" height="315" src="https://www.youtube.com/embed/utU28B_dAic?start=82" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Imanol Saenz Aguirre
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GhtkPpIKSc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Apis Used
+- OpenGL + GLFW
+- ImGui
+- Bullet
+
+## Main Features
+- Structure
+  - [User-Engine Comunication](#user-engine-comunication)
+  - [Instancing](#instancing)
+- Rendering
+  - [Forward Rendering](#forward-rendering)
+  - [Oclussion Culling](#oclussion-culling)
+  - [Lightning](#lightning)
+  - [PBR](#physically-based-rendering-pbr)
+- Physics
+  - [Bullet](#bullet)
+
+## Structure
+
+### User-Engine Comunication
+
+The engine code have been implemented in a way that a user can manipulate the data without using any core class. The user changes are applied before rendering but not at the moment the user requested.
+
+{% highlight c++ %}
+//User Code
+
+Node n; //Invalid identifier, any change won't be applied
+n.Create(); //Insertion to the engine node system, ID is now valid
+
+while (!engine.IsClosed()) {
+	//Change node
+	engine.EndFrame();//Changes are applied
+}
+
+{% endhighlight %}
+
+
+### Instancing
+
+Any node can be setted as an instance node. When this happens that node will be added to an array of object that share the same properties, based on material and geometry used.
+
+That structure uses a node as a shared parent for all the instances nodes of the list.
+That way, only one world matrix needs to be calculated and all the information sended to the GPU is relative to that parent.
+
+
+![image-center](/assets/PostsAssets/Engine3D/InstanceParent.png){: .align-center}
+
+## Rendering
+### Forward Rendering
+
+Each object/structure to be rendered is added to a vector being processed at the engine thread when ready.
+
+### Oclussion Culling
+
+Each object/structure handles an OpenGL query. That query is configured to return true if any pixel has been rendered for that object. In the case of an instanced object it returns true if any of the nodes in the structure has been able to render any pixel.
+
+![image-center](/assets/PostsAssets/Engine3D/Culling1.png){: .align-center}
+![image-center](/assets/PostsAssets/Engine3D/Culling2.png){: .align-center}
+
+{% highlight c++ %}
+//After a simple render (just bounding boxes with no texture)
+DisplayList dList;
+for(NodeCore& node : engine.nodeSystem_.activeNodes_){
+	node.query_.GetResult() ? dList.push_back(node);
+}
+for(NodeCore& node : dList.list){
+	node.Draw();
+}
+{% endhighlight %}
+
+
+### Lightning
+
+This engine is able to handle 64 point lights, 32 spot lights and 8 directional lights although only directional lights cast shadows.
+Each directional light saves a depth 2DTexture which is sent to the render shader to render the shadows.
+
+![image-center](/assets/PostsAssets/Engine3D/3DEngine-Shadows.png){: .align-center}
+
+
+### Physically Based Rendering (PBR)
+Physically Based Rendering.
+
+Each node has a list of available materials to be applied. That material will handle all the textures needed for PBR to work. [Albedo, NormalMap, Metallic, Roughness, AmbientOclussion].
+That allows rendering an object more realistically as its physical properties are taken into account when rendered.
+
+{% highlight c++ %}
+
+  const char8* a =  "../data/textures/rustediron_albedo.png";
+  const char8* n =  "../data/textures/rustediron_normal.png";
+  const char8* m =  "../data/textures/rustediron_metallic.png";
+  const char8* ro = "../data/textures/rustediron_roughness.png";
+  const char8* ao = "../data/textures/rustediron_ao.png";
+
+Material mat;
+  mat.SetDisplayName("Material 1");
+  mat.SetTexture(TextureType::kTT_Albedo, a);
+  mat.SetTexture(TextureType::kTT_Normal, n);
+  mat.SetTexture(TextureType::kTT_Metallic, m);
+  mat.SetTexture(TextureType::kTT_Roughness, ro);
+  mat.SetTexture(TextureType::kTT_AmbientOclusion, ao);
+{% endhighlight %}
+
+## Physics
+
+### Bullet
+
+Bullet physics library has been implemented and used to handle nodes with gravity and collisions enabled.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GhtkPpIKSc0?start=83" frameborder="0" allow="encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

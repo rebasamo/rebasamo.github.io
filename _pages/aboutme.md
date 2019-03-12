@@ -31,17 +31,19 @@ I become easily immersed in a piece of code until it results in what I am search
 # Technical Skills
 
 ## Programming Languages
-
-- [C / C++](http://www.cplusplus.com/)
-- [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/)
-- [Swift](https://developer.apple.com/swift/)
-- [ASM](#!)
-- [Java](https://www.java.com/en/)
-- [JavaScript](https://www.javascript.com/)
-- [Python](https://www.python.org/)
-- [Lua](https://www.lua.org/)
-- [GLSL](https://www.khronos.org/opengl/wiki/Core_Language_(GLSL))
-- [HLSL](https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl)
+- High Level
+  - [C / C++](http://www.cplusplus.com/)
+  - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/)
+  - [GLSL](https://www.khronos.org/opengl/wiki/Core_Language_(GLSL))
+- Medium Level
+  - [ASM](#!)
+  - [Python](https://www.python.org/)
+  - [Swift](https://developer.apple.com/swift/)
+  - [Lua](https://www.lua.org/)
+  - [HLSL](https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl)
+- Low Level
+  - [Java](https://www.java.com/en/)
+  - [JavaScript](https://www.javascript.com/)
 
 ## APIs Used
 
@@ -58,6 +60,8 @@ I become easily immersed in a piece of code until it results in what I am search
 
 ## Software
 - [Visual Studio](https://visualstudio.microsoft.com/)
+- [Android Studio](#!)
+- [XCode](#!)
 - [GENie](https://github.com/bkaradzic/GENie)
 
 ## Source Controll
@@ -65,6 +69,7 @@ I become easily immersed in a piece of code until it results in what I am search
   - Console
   - SourceTree
   - GitHub Desktop
+- Preforce(P4V)
 
 # Education
 
