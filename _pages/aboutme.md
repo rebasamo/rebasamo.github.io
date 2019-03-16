@@ -36,7 +36,7 @@ I easily immerse myself in a piece of code until it results in what I'm looking 
 | Catalan | Native |
 | Spanish | Native |
 | English | First Certificate Cambridge - B2 |
-| '' | IELTS 7.5 Band Score - CEFR: C1 |
+|  | IELTS 7.5 Band Score - CEFR: C1 |
 
 ## Programming Languages
 - High Level
