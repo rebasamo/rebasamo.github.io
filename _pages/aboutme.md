@@ -15,7 +15,7 @@ toc_sticky: true
 
 # About Me
 <font style="opacity: 0.5" size= "3">
-Young programmer on the way of refine my programming abilities as well as forging news ones on the way. Very interested on the procedural code as well as instancing. Something between Minecraft and Cube World would be the environment I would like to reproduce in a hand made engine as I am learning. Generate a procedural terrain, handle the information of the world, discard the unnecesary information and render all with the best perfomance possible are some of the main features I want to learn.
+Young programmer on the way of refining my programming abilities as well as forging new ones on the way. Very interested in the procedural code as well as instancing. Something between Minecraft and Cube World would be the environment I would like to reproduce in a hand made engine as I am learning. Generate a procedural terrain, handle the information of the world, discard the unnecessary information and render all with the best performance possible are some of the main features I want to learn.
 
 <br>
 
@@ -24,11 +24,19 @@ Looking for work, if possible, in a company with games with those characteristic
 <br>
 <br>
 
-I become easily immersed in a piece of code until it results in what I am searching for which is on of my strengths. 
-
+I easily immerse myself in a piece of code until it results in what I'm looking for, which is one of my strengths.
 </font>
 <br>
 # Technical Skills
+
+## Languages
+
+| Language | Level|
+|-------|--------|
+| Catalan | Native |
+| Spanish | Native |
+| English | First Certificate Cambridge - B2 |
+| '' | IELTS 7.5 Band Score - CEFR: C1 |
 
 ## Programming Languages
 - High Level
@@ -36,7 +44,7 @@ I become easily immersed in a piece of code until it results in what I am search
   - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/)
   - [GLSL](https://www.khronos.org/opengl/wiki/Core_Language_(GLSL))
 - Medium Level
-  - [ASM](#!)
+  - [ARM-ASM](#!)
   - [Python](https://www.python.org/)
   - [Swift](https://developer.apple.com/swift/)
   - [Lua](https://www.lua.org/)
@@ -90,7 +98,7 @@ I become easily immersed in a piece of code until it results in what I am search
 
 ### Projects
 
-  {% for post in site.posts %}
+  {% for post in site.portfolio %}
   - [{{post.title}}]({{post.url}})
   {% endfor %}
 
@@ -102,8 +110,6 @@ I become easily immersed in a piece of code until it results in what I am search
   {% endfor %}
 
 # Interests
-
-judo, gamejams, kind of games, etc
 
 ## Sports
 

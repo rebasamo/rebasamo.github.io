@@ -3,6 +3,7 @@
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}
+   
       {% if s.image %}
         <img src=
         {% if s.image contains "://" %}
@@ -11,10 +12,22 @@
           "{{ s.image | relative_url }}"
         {% endif %}
         alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
+      {% endif %} 
+
+      {% if s.url %}
+      <a href={{ s.url }}>
+        {% if s.icon %}
+        <i class="{{ s.icon }}" aria-hidden="true"></i>
+        {% endif %}
+      {{ s.title }}</a>
+      
+      {% else s.url %}
+      
       {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
       {% if s.text %}{{ s.text | markdownify }}{% endif %}
       {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
+      {% endif %}
+
     {% endfor %}
     {% if page.sidebar.nav %}
       {% include nav_list nav=page.sidebar.nav %}

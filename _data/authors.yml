@@ -11,15 +11,3 @@ Xavier Rebasa Moll:
     - label: "+34 664471449"
       icon: "fas fa-fw fa-phone-square"
       url: "tel:+34 664471449"
-
-
-  custom:
-    - title: "Languages"
-
-    - language: "Spanish"
-    - level: "Native"
-    - language: "Catalan"
-    - level: "Native"
-    - language: "English"
-    - level: "First Certificate Cambridge | B2"
-    - level: "IELTS 7.5 Band Score | CEFR: C1"

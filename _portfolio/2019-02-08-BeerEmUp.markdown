@@ -1,0 +1,130 @@
+---
+layout: single
+title:  "Beer Em Up"
+date:   2019-02-08 23:26:41 +0100
+categories: Game
+author: Xavier Rebasa Moll
+
+toc: true
+toc_label: In This Page
+toc_sticky: true
+
+header:
+  #image: /assets/PostsAssets/BeerEmUp/Duffer_Ambar.png
+  teaser: /assets/PostsAssets/BeerEmUp/Title.png
+
+gallery:
+  - url: /assets/PostsAssets/BeerEmUp/Gallery1.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery1.jpg
+    alt: "Image 1"
+    title: "Image 1"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery2.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery2.jpg
+    alt: "Image 2"
+    title: "Image 2"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery3.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery3.jpg
+    alt: "Image 3"
+    title: "Image 3"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery4.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery4.jpg
+    alt: "Image 4"
+    title: "Image 4"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery5.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery5.jpg
+    alt: "Image 5"
+    title: "Image 5"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery6.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery6.jpg
+    alt: "Image 6"
+    title: "Image 6"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery7.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery7.jpg
+    alt: "Image 7"
+    title: "Image 7"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery8.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery8.jpg
+    alt: "Image 8"
+    title: "Image 8"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery9.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery9.jpg
+    alt: "Image 9"
+    title: "Image 9"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery10.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery10.jpg
+    alt: "Image 10"
+    title: "Image 10"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery11.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery11.jpg
+    alt: "Image 11"
+    title: "Image 11"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery12.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery12.jpg
+    alt: "Image 12"
+    title: "Image 12"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery13.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery13.jpg
+    alt: "Image 13"
+    title: "Image 13"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery14.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery14.jpg
+    alt: "Image 14"
+    title: "Image 14"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery15.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery15.jpg
+    alt: "Image 15"
+    title: "Image 15"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery16.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery16.jpg
+    alt: "Image 16"
+    title: "Image 16"
+  - url: /assets/PostsAssets/BeerEmUp/Gallery17.jpg
+    image_path: /assets/PostsAssets/BeerEmUp/Gallery17.jpg
+    alt: "Image 17"
+    title: "Image 17"
+---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Px1C7v5Kizg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+# Context
+One of the main projects of the last year at [ESAT](/aboutme/#esat-escuela-superior-de-arte-y-tecnología). A group of 5 artists and 5 programmers working together as in a real game developer team emulating all the behavior in the business. We had the opportunity to work together with a group of Berklee Valencia musicians which helped a lot giving the game a great ambience.
+
+Beer Em Up is on [Steam](https://store.steampowered.com/app/945880/Beerem_Up/) for free. So give it a try.
+
+
+# Contributions
+
+- Camera Management
+- Traps Behavior
+- Dialogue UI
+- InGame UI + InGame Menu System
+
+# About the Game
+## Description
+
+Beer'Em Up is a game belonging to the Beat'EmUp genre, with melee combat mechanics and special abilities through which our protagonists will be able to sweep at pleasure a large number of enemies that will come out to meet them, as well as face the most varied situations, from dodging the rubble of buildings that collapse in its path, to escaping giant rolling grapes in the purest Hollywood style.
+
+![image-center](/assets/PostsAssets/BeerEmUp/Duffer_Ambar.png){: .align-right}
+Beer'Em Up features:
+- Two characters to choose from, as funny as they are different from each other: a strong, forceful God battling with a mace or an intrepid Goddess, skilled in the use of the sword.
+- A wide range of combos to be able to eliminate enemies in the way that best suits the player.
+- A series of special abilities rendering players more powerful, able to defeat a greater number of enemies at a single strike.
+- A bizarre story, full of hilarious and surreal situations.
+- A fast-paced gameplay that gives no respite and pushes the player to learn the end of the story.
+- A fantastic setting inspired by ancient mythologies and the culture of beer and party.
+
+In this game, the God Duffer together with his beloved wife Ambar, must face terrible creatures to recover the beer that has disappeared from his world.
+
+The game features local co-op, with both characters having the same abilities, but varying in the speed and power of the execution.
+
+Players will have to face different traps, such as destructible covers, catapults triggered by enemies, rolling trunks, and a long etc ...
+
+The progression of the game is carried out through melee close combat, including, progressively, three special abilities, which expand the range of attacks, increasing the strategic factor:
+Berserker Mode: An overload of power that will help players finish anyone who dares to stand between them and their barrel.
+Area Attack: A powerful blow against the ground, capable of knocking down all the enemies ​​approaching the player.
+Sweeping Attack: A long-range hit, which can make enemies have to think twice about their life choices.
+
+# Gallery
+
+{% include gallery %}

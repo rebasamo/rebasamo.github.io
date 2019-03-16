@@ -2,7 +2,7 @@
 layout: single
 title:  "3D Engine"
 date:   2019-02-08 23:26:41 +0100
-categories: jekyll update
+categories: Engine
 author: Xavier Rebasa Moll
 
 toc: true
@@ -13,8 +13,11 @@ header:
   image: /assets/PostsAssets/Engine3D/Main.png
   teaser: /assets/PostsAssets/Engine3D/3DEngine-Shadows.png
 ---
+<br>
 
-First time in contact with a 3D Engine code. Pretty intensive work and a lot of code rewritten during the last year on ESAT. This engine have been the result of the work with [Imanol Saenz Aguirre](#!).
+# Context
+
+First time in contact with a 3D Engine code. Pretty intensive work and a lot of code rewritten during the last year on ESAT. This engine has been the result of the work with [Imanol Saenz Aguirre](https://thelitelboy.github.io/).
 
 ## Demos
 
@@ -41,11 +44,12 @@ Imanol Saenz Aguirre
 - Physics
   - [Bullet](#bullet)
 
+# Project
 ## Structure
 
 ### User-Engine Comunication
 
-The engine code have been implemented in a way that a user can manipulate the data without using any core class. The user changes are applied before rendering but not at the moment the user requested.
+The engine code has been implemented in a way that a user can manipulate the data without using any core class. The user changes are applied before rendering but not at the moment the user requested.
 
 {% highlight c++ %}
 //User Code
@@ -63,10 +67,10 @@ while (!engine.IsClosed()) {
 
 ### Instancing
 
-Any node can be setted as an instance node. When this happens that node will be added to an array of object that share the same properties, based on material and geometry used.
+Any node can be set as an instance node. When this happens that node will be added to an array of objects that share the same properties, based on material and geometry used.
 
 That structure uses a node as a shared parent for all the instances nodes of the list.
-That way, only one world matrix needs to be calculated and all the information sended to the GPU is relative to that parent.
+That way, only one world matrix needs to be calculated and all the information sent to the GPU is relative to that parent.
 
 
 ![image-center](/assets/PostsAssets/Engine3D/InstanceParent.png){: .align-center}
@@ -78,7 +82,7 @@ Each object/structure to be rendered is added to a vector being processed at the
 
 ### Oclussion Culling
 
-Each object/structure handles an OpenGL query. That query is configured to return true if any pixel has been rendered for that object. In the case of an instanced object it returns true if any of the nodes in the structure has been able to render any pixel.
+Each object/structure handles an OpenGL query. That query is configured to return true if any pixel has been rendered for that object. In the case of an instanced, object it returns true if any of the nodes in the structure has been able to render any pixel.
 
 ![image-center](/assets/PostsAssets/Engine3D/Culling1.png){: .align-center}
 ![image-center](/assets/PostsAssets/Engine3D/Culling2.png){: .align-center}
@@ -97,14 +101,13 @@ for(NodeCore& node : dList.list){
 
 ### Lightning
 
-This engine is able to handle 64 point lights, 32 spot lights and 8 directional lights although only directional lights cast shadows.
+This engine is able to handle 64 point lights, 32 spotlights and 8 directional lights although only directional lights cast shadows.
 Each directional light saves a depth 2DTexture which is sent to the render shader to render the shadows.
 
 ![image-center](/assets/PostsAssets/Engine3D/3DEngine-Shadows.png){: .align-center}
 
 
 ### Physically Based Rendering (PBR)
-Physically Based Rendering.
 
 Each node has a list of available materials to be applied. That material will handle all the textures needed for PBR to work. [Albedo, NormalMap, Metallic, Roughness, AmbientOclussion].
 That allows rendering an object more realistically as its physical properties are taken into account when rendered.
