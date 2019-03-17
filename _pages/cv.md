@@ -1,9 +1,8 @@
 ---
 layout: single
-#title:  "About Me"
 date:   2019-02-08 23:26:41 +0100
 categories: cv
-permalink: /CV/
+permalink: /cv/
 author: Xavier Rebasa Moll
 
 toc: true
