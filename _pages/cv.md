@@ -12,7 +12,6 @@ toc_sticky: true
 
 ---
 
-<br>
 # Technical Skills
 
 ## Languages
