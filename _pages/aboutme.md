@@ -14,7 +14,7 @@ toc_sticky: true
 
 
 # About Me
-<font style="opacity: 0.5" size= "3">
+<font style="opacity: 0.7" size= "3">
 Young programmer on the way of refining my programming abilities as well as forging new ones on the way. Very interested in the procedural code as well as instancing. Something between Minecraft and Cube World would be the environment I would like to reproduce in a hand made engine as I am learning. Generate a procedural terrain, handle the information of the world, discard the unnecessary information and render all with the best performance possible are some of the main features I want to learn.
 
 <br>
@@ -27,57 +27,6 @@ Looking for work, if possible, in a company with games with those characteristic
 I easily immerse myself in a piece of code until it results in what I'm looking for, which is one of my strengths.
 </font>
 <br>
-# Technical Skills
-
-## Languages
-
-| Language | Level|
-|-------|--------|
-| Catalan | Native |
-| Spanish | Native |
-| English | First Certificate Cambridge - B2 |
-|  | IELTS 7.5 Band Score - CEFR: C1 |
-
-## Programming Languages
-- High Level
-  - [C / C++](http://www.cplusplus.com/)
-  - [C#](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/)
-  - [GLSL](https://www.khronos.org/opengl/wiki/Core_Language_(GLSL))
-- Medium Level
-  - [ARM-ASM](#!)
-  - [Python](https://www.python.org/)
-  - [Swift](https://developer.apple.com/swift/)
-  - [Lua](https://www.lua.org/)
-  - [HLSL](https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/dx-graphics-hlsl)
-- Low Level
-  - [Java](https://www.java.com/en/)
-  - [JavaScript](https://www.javascript.com/)
-
-## APIs Used
-
-- [OpenGL](https://www.opengl.org/) +
-	- [GLFW](https://www.glfw.org/)
-	- [SFML](https://www.sfml-dev.org)
-- [DirectX 11](#!) (Framework)
-- [ImGui](https://github.com/ocornut/imgui)
-- [GLM](https://glm.g-truc.net/0.9.9/index.html)
-
-## Engines
-- [Unreal Engine 4](https://www.unrealengine.com/en-US/what-is-unreal-engine-4)
-- [Unity](https://unity3d.com/)
-
-## Software
-- [Visual Studio](https://visualstudio.microsoft.com/)
-- [Android Studio](#!)
-- [XCode](#!)
-- [GENie](https://github.com/bkaradzic/GENie)
-
-## Source Controll
-- Git
-  - Console
-  - SourceTree
-  - GitHub Desktop
-- Preforce(P4V)
 
 # Education
 
@@ -101,6 +50,24 @@ I easily immerse myself in a piece of code until it results in what I'm looking 
   {% for post in site.portfolio %}
   - [{{post.title}}]({{post.url}})
   {% endfor %}
+
+### Currently Working
+
+ - UE4-PS4 game
+
+Currently working in a team of 5 programmers and 3 artists aiming for a game to work in a PS4. That project is made for the subject of 3D Games Prototyping in [SHU](https://www.shu.ac.uk/). The game will be finished around the beginning of May.
+
+- Asset Management External Tool
+
+That tool aim is to provide a way to work simultaneously in your assets while they are being compiled and prepared for different platforms or environments. The tool will work in second plane watching over a folder looking for updates. The file changed will be recompiled and sent to the different folders for the different profiles configured. 
+
+The tool is being programmed in a way that any command related function can be called for a specific file. An external command-line tool or a Python script, both are viable to work with this tool.
+
+- Self made Instancing based Engine
+
+That is one of the projects I am more excited about, but, at the same time is the one I have less time to work with. 
+
+The aim is to have a good customizable engine capable of handle the more objects the better. I want to learn how to send most of the information at the same shader (OpenGL for now) and how to handle it. Most of that has been done in one of my previous projects [3D Engine](/portfolio/2019-02-08-3DEngine/) but it was implemented in the mid-end development, so it wasn't working at his maximum capacity as it had been adapted to the code at that time.
 
 ## Others
 
