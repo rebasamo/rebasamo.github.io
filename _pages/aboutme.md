@@ -1,6 +1,7 @@
 ---
 layout: single
 date:   2019-02-08 23:26:41 +0100
+title: ""
 categories: about
 permalink: /aboutme/
 author: Xavier Rebasa Moll
