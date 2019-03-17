@@ -1,6 +1,5 @@
 ---
 layout: single
-#title:  "About Me"
 date:   2019-02-08 23:26:41 +0100
 categories: about
 permalink: /aboutme/
@@ -11,7 +10,6 @@ toc_label: In This Page
 toc_sticky: true
 
 ---
-
 
 # About Me
 <font style="opacity: 0.7" size= "3">
