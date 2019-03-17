@@ -11,3 +11,9 @@ Xavier Rebasa Moll:
     - label: "+34 664471449"
       icon: "fas fa-fw fa-phone-square"
       url: "tel:+34 664471449"
+
+  custom:
+    - label: "CV"
+      url: "/assets/Docs/CV.pdf"
+    - label: "Covering Letter"
+      url: "/assets/Docs/CoveringLetter.pdf"

@@ -23,3 +23,20 @@
         {% endfor %}
 {% endif %}
 -->
+<hr>
+{% if author.custom %}
+{% for custom in author.custom %}
+
+{% if custom.url %}
+<font style="opacity: 1" size= "3">
+<a href={{custom.url}} rel="nofollow noopener noreferrer" target="_blank">
+  <i class="{{ custom.icon | default: 'fas fa-link' }}"></i>
+{% if custom.label %}
+{{custom.label}}
+{% endif %}
+</a>
+</font>
+{% endif %}
+
+{% endfor %}
+{% endif %}

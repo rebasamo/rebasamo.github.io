@@ -15,11 +15,13 @@ toc_sticky: true
 
 # About Me
 <font style="opacity: 0.7" size= "3">
-Young programmer on the way of refining my programming abilities as well as forging new ones on the way. Very interested in the procedural code as well as instancing. Something between Minecraft and Cube World would be the environment I would like to reproduce in a hand made engine as I am learning. Generate a procedural terrain, handle the information of the world, discard the unnecessary information and render all with the best performance possible are some of the main features I want to learn.
+I am a young programmer on the way of refining my programming abilities as well as forging new ones on the way. Very interested in the procedural code as well as instancing. Something between Minecraft and Cube World would be the environment I would like to reproduce in a handmade engine as I am learning. Generate a procedural terrain, handle the information of the world, discard the unnecessary information and render all with the best performance possible are some of the main features I want to learn.
 
 <br>
+Another topic I love is Space. Since very young I got absorbed with the documentaries about all the crazy stuff that is happening in the space. Games like Elite Dangerous or Star Citizen were some of my first ideal games to program myself I thought of when I started studying programming. Clearly not yet knowing all the work that entails.
 
-Looking for work, if possible, in a company with games with those characteristics where to learn in depth every nook of the algorithms.
+<br>
+Currently looking for a job, if possible, in a company with games with those characteristics where to learn in depth every nook of the algorithms.
 
 <br>
 <br>
