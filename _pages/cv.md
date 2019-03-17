@@ -1,5 +1,6 @@
 ---
 layout: single
+#title:  "cv"
 date:   2019-02-08 23:26:41 +0100
 categories: cv
 permalink: /cv/
