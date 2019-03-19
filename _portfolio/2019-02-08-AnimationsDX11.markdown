@@ -30,7 +30,9 @@ sidebar:
 <br>
 
 # Context
-
+<video width="100%" controls muted autoplay loop>
+    <source src="/assets/PostsAssets/Animations/DieVid.mp4" type="video/mp4">
+</video>
 Given a framework, we needed to create a system to manage object and component hierarchy as well to handle animation that could be rendered using a given hierarchy.
 ## Tasks
 
@@ -41,6 +43,7 @@ Given a framework, we needed to create a system to manage object and component h
   - Death animation will trigger when a robot is shot.
   - Attack animation will trigger if the plane flies nearly.
   - Idle will trigger after a few seconds of death or if the plane flies out of range.
+
 
 
 # Project
@@ -65,6 +68,10 @@ Contains the array of the different MeshBases. Is the class called to request fo
 A bounding box is generated with the information of each MeshBase.
 
 ### Animations
+
+<video width="100%" muted autoplay loop>
+    <source src="/assets/PostsAssets/Animations/AnimationVid.mp4" type="video/mp4">
+</video>
 
 - AnimationTransform
 
@@ -179,6 +186,10 @@ private:
 
 
 ### Objects
+
+<video width="100%" muted autoplay loop>
+    <source src="/assets/PostsAssets/Animations/DebugVid.mp4" type="video/mp4">
+</video>
 
 A base class which from all the Object type classes will inherit. Contains the basic information as well as the main functionality for a 3D object. 
 
