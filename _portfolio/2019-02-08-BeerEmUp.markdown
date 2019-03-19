@@ -4,7 +4,6 @@ title:  "Beer Em Up"
 date:   2019-02-08 23:26:41 +0100
 categories: Game
 author: Xavier Rebasa Moll
-
 toc: true
 toc_label: In This Page
 toc_sticky: true
@@ -12,6 +11,20 @@ toc_sticky: true
 header:
   #image: /assets/PostsAssets/BeerEmUp/Duffer_Ambar.png
   teaser: /assets/PostsAssets/BeerEmUp/Title.png
+
+sidebar:
+  - title: "Role"
+    text: "Programmer"
+  - title: "Language"
+    text: "C++"
+  - title: "Platforms"
+    text: "PC"
+  - title: "Engine"
+    text: "UE4 - 4.16.3"
+  - title: "Date"
+    text: "Course 2017-2018"
+  - title: "Prices"
+    text: "- BEST ART DIRECTION - Student Game Contest 2018 \n - BEST SOUND - Student Game Contest 2018"
 
 gallery:
   - url: /assets/PostsAssets/BeerEmUp/Gallery1.jpg

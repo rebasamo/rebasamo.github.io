@@ -12,6 +12,20 @@ toc_sticky: true
 header:
   image: /assets/PostsAssets/Animations/AllRobots2.png
   teaser: /assets/PostsAssets/Animations/Robot.png
+
+sidebar:
+  - title: "Role"
+    text: "Programmer"
+  - title: "Language"
+    text: "C++"
+  - title: "Platforms"
+    text: "PC"
+  - title: "Framework"
+    text: "DX11 - University Framework"
+  - title: "Date"
+    text: "Course 2018-2019"
+  - title: "Mark"
+    text: "82/100"
 ---
 <br>
 

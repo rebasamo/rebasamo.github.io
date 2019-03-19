@@ -12,6 +12,20 @@ toc_sticky: true
 header:
   image: /assets/PostsAssets/Engine3D/Main.png
   teaser: /assets/PostsAssets/Engine3D/3DEngine-Shadows.png
+
+sidebar:
+  - title: "Role"
+    text: "Programmer"
+  - title: "Language"
+    text: "C++"
+  - title: "Platforms"
+    text: "PC"
+  - title: "Framework"
+    text: "OpenGL 3.X + GLFW"
+  - title: "Date"
+    text: "Course 2017-2018"
+  - title: "Mark"
+    text: "Merit"
 ---
 <br>
 
