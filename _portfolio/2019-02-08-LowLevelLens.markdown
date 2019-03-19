@@ -27,11 +27,12 @@ sidebar:
   - title: "Mark"
     text: "82/100"
 ---
+
 <br>
 <video width="100%" muted autoplay loop>
     <source src="/assets/PostsAssets/LowLevel/LensVidmp4.mp4" type="video/mp4">
-    <p>No compatible video device</p>
 </video>
+
 # Context
 
 Group of different exercises to learn and experience different ways of optimizing code. They consist to identify the hotspot of the algorithm, understand what it does and optimize it to the most.
