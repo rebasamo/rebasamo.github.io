@@ -17,7 +17,7 @@ sidebar:
   - title: "Role"
     text: "Programmer"
   - title: "Language"
-    text: "C++"
+    text: "- C++ \n - ARM-ASM"
   - title: "Platforms"
     text: "PC - Raspberry Pi 3 model b"
   - title: "Framework"
@@ -25,7 +25,7 @@ sidebar:
   - title: "Date"
     text: "Course 2017-2018"
   - title: "Mark"
-    text: "82/100"
+    text: "Merit"
 ---
 
 <br>
