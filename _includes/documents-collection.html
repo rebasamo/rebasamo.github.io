@@ -17,7 +17,13 @@
 <!-- Generate a list of custom categories to separate the posts by those -->
 
 {% if include.use == 'tags' %}
-{% assign all_tags = entries | map: 'tags' | flatten | uniq %}
+{% assign all_tags = entries | map: 'tags' | flatten | uniq | sort %}
+
+{% if include.sort_tags == 'reverse' %}
+  {% assign all_tags = all_tags | sort | reverse %}
+  {% else %}
+  {% assign all_tags = all_tags | sort %}
+{% endif %}
 
 <!-- Loop through each tag and filter posts for that tag -->
 {% for tag in all_tags %}
