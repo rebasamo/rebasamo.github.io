@@ -42,6 +42,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-archives
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -98,6 +99,10 @@ defaults:
       layout: single
       author_profile: false
       share: true
+      read_time: false
+      comments: true 
+      show_date: true
+      date_format: "%f-%m-%Y"
   - scope:
       path: "_works"
       type: works
@@ -105,7 +110,6 @@ defaults:
       layout: single
       author_profile: true
       share: true
-
 
 footer:
   links:

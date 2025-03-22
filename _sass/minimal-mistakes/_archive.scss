@@ -80,7 +80,7 @@
   position: relative;
   border-radius: $border-radius;
   overflow: hidden;
-
+  
   img {
     width: 100%;
   }
@@ -129,7 +129,10 @@
 .archive {
   .grid__wrapper {
     /* extend grid elements to the right */
-
+    
+  display: flex;
+  //grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  //grid-template-columns: ;
     @include breakpoint($large) {
       margin-right: -1 * $right-sidebar-width-narrow;
     }
@@ -141,12 +144,23 @@
 }
 
 .grid__item {
-  margin-bottom: 2em;
+  margin-bottom: 0em;
+  margin: 5%;
+  background-color: $code-background-color;
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  //text-align: center;
+  height: fit-content;
+  overflow: hidden;
+  border: 0px solid #000; /* Add a border */
+  padding: 0px; /* Add padding inside the border */
+  border-radius: 8px; /* Optional: rounded corners */
+  transition: 0.5s;
 
   @include breakpoint($small) {
     float: left;
     width: span(5 of 10);
-
     &:nth-child(2n + 1) {
       clear: both;
       margin-left: 0;
@@ -159,9 +173,10 @@
   }
 
   @include breakpoint($medium) {
+    float: left;
     margin-left: 0; /* override margin*/
     margin-right: 0; /* override margin*/
-    width: span(3 of 12);
+    width: span(4 of 12);
 
     &:nth-child(2n + 1) {
       clear: none;
@@ -192,29 +207,87 @@
     font-size: 0.6em;
   }
 
+  .archive__item{
+    margin: 5%;
+  }
   .archive__item-title {
     margin-top: 0.5em;
-    font-size: $type-size-5;
+    font-size: $type-size-2;
+    text-align: center;
+
+    @include breakpoint($medium) {
+      font-size: $type-size-6;
+    }
   }
 
   .archive__item-excerpt {
-    display: none;
-
+    display: block;
+    font-size: $type-size-3;
+    padding: 0px; /* Add padding inside the border */
+    //background-color: $footer-background-color;
+    overflow: hidden;
+    min-height: 100px;
+    height: 100px;
+    border: 0px solid $border-color; /* Add a border */
+    border-radius: 8px; /* Optional: rounded corners */
+    transition: 1s ease; /* Transition on max-height */
+    @include breakpoint($small) {
+      display: block;
+      font-size: $type-size-3;
+    }
     @include breakpoint($medium) {
       display: block;
       font-size: $type-size-6;
     }
   }
 
+  
+
   .archive__item-teaser {
+    width: 100%;
+    padding-top: 100%; /* This creates a square using padding */
+    position: relative;
+
     @include breakpoint($small) {
-      max-height: 200px;
+      //height: 100%;
+      //max-height: 200px;
     }
 
     @include breakpoint($medium) {
-      max-height: 120px;
+      //height: 100%;
+      //max-height: 120px;
     }
   }
+}
+
+.grid__item:hover {
+
+  border: 3px solid $border-color; /* Add a border */
+  border-radius: 8px; /* Optional: rounded corners */
+  .archive__item-excerpt
+  {
+    //overflow: visible;
+    height: auto;
+    max-height: 500px; /* Set a higher max-height, or large enough to fit the content */
+    background-color: $footer-background-color;
+    padding: 5%;
+    //display: none;
+  }
+}
+/* Style the image */
+.archive__item-teaser img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  transform: translate(-50%, -50%);
+}
+
+/* Handle cases where the image is taller than it is wide */
+.archive__item-teaser img.tall {
+  height: 100%;
+  width: auto;
 }
 
 /*

@@ -1,9 +1,12 @@
 ---
 title: "Treglos Hotel"
 excerpt: "Situated above a beautiful sandy beach in North Cornwall that is renowned as a surfers paradise."
+tags:
+  - Unrelated Work
 header:
   # image: /assets/images/unsplash-gallery-image-2.jpg
-  teaser: https://www.goodhotelguide.com/wp-content/uploads/2016/06/2009-12-29-treglos-entrance-538x357.jpg
+  # teaser: https://www.goodhotelguide.com/wp-content/uploads/2016/06/2009-12-29-treglos-entrance-538x357.jpg
+  teaser: /assets/WorkAssets/Treglos/TreglosHotel.png
 sidebar:
   - title: "Role"
     text: "Hotplate, Waiter"

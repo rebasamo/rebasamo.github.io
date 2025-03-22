@@ -4,6 +4,7 @@ title:  "DX11 Animation System"
 date:   2019-02-08 23:26:41 +0100
 categories: Project
 author: Xavier Rebasa Moll
+excerpt: "Given a framework, implement systems related to meshes, animations and object interactions"
 
 toc: true
 toc_label: In This Page

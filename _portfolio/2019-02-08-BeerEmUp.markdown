@@ -4,6 +4,8 @@ title:  "Beer Em Up"
 date:   2019-02-08 23:26:41 +0100
 categories: Game
 author: Xavier Rebasa Moll
+excerpt: "Game developed and published during last year of ESAT"
+
 toc: true
 toc_label: In This Page
 toc_sticky: true

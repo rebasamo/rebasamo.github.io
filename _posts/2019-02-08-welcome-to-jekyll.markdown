@@ -2,7 +2,7 @@
 layout: single
 title:  "Welcome to Jekyll!"
 date:   2019-02-08 23:26:41 +0100
-categories: jekyll update
+categories: TestCategory update
 author: Xavier Rebasa Moll
 header:
   #image: https://scontent.fdsa1-1.fna.fbcdn.net/v/t31.0-8/18921048_1059498137483324_6729944453079430233_o.jpg?_nc_cat=110&_nc_ht=scontent.fdsa1-1.fna&oh=a66516ddf736aa714bea7534ae8b8542&oe=5CE6B245

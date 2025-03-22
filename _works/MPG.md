@@ -2,6 +2,8 @@
 title: "The Multiplayer Group"
 permalink: /MPG/
 excerpt: "Multiple Projects"
+tags:
+  - Programming
 toc: true
 toc_label: In This Page
 toc_sticky: true

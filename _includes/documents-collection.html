@@ -14,6 +14,47 @@
   {% endif %}
 {% endif %}
 
+<!-- Generate a list of custom categories to separate the posts by those -->
+
+{% if include.use == 'tags' %}
+{% assign all_tags = entries | map: 'tags' | flatten | uniq %}
+
+<!-- Loop through each tag and filter posts for that tag -->
+{% for tag in all_tags %}
+  {% assign tagged_posts = entries | where: 'tags', tag %}
+  
+  <section id="{{ tag | slugify | downcase }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">{{ tag }}</h2>
+    <div class="entries-{ {page.entries_layout | default: 'list' }}">
+  <!-- Loop through each post with the current tag and render archive-single.html -->
+  {% for post in tagged_posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+</div>
+<a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+</section>
+{% endfor %}
+
+  <!-- Loop through non tagged ones -->
+   {% assign untagged_posts = entries | where_exp: "entry", "entry.tags == empty" %}
+
+   {% if untagged_posts.size > 0 %}
+  <section id="{{ 'Others' | slugify | downcase }}" class="taxonomy__section">
+    <h2 class="archive__subtitle">Other</h2>
+    <div class="entries-{{ page.entries_layout | default: 'list' }}">
+  <!-- Loop through each post with the current tag and render archive-single.html -->
+  {% for post in untagged_posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+</div>
+<a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+</section>
+
+{% endif %}
+{% else %}
 {%- for post in entries -%}
   {% include archive-single.html %}
 {%- endfor -%}
+{% endif %}
+
+<!---->
