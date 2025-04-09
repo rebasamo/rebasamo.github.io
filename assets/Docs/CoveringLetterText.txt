@@ -1,0 +1,18 @@
+Xavier Rebasa Moll
++34 664471449
+llomasaberreibax@gmail.com
+
+Dear [Hiring Manager's Name],
+
+I am writing to express my interest in a programming position at [Company Name]. With six years of experience in the video game industry across two companies and multiple projects, I bring a solid foundation in C++ and a broad technical skill set that allows me to contribute meaningfully across various domains of game development.
+
+As a generalist programmer, I’ve worked on everything from gameplay systems to engine-level architecture and performance optimization. This versatility has made me comfortable adapting to new challenges and working effectively within cross-disciplinary teams. I am passionate about writing high-quality, maintainable code and continuously evolving my craft to meet the demands of complex and scalable game systems.
+
+Beyond my core programming skills, I’m particularly drawn to projects that push the boundaries of what games can do—both technically and creatively. On my last project at MPG, I developed a dynamic tinting system that allowed any object in the scene to be recolored in real time, adding a unique interactive layer to gameplay. Currently, I’m developing a template that integrates real-world geographic data, such as elevation maps and city layouts, to procedurally generate immersive game worlds based on actual locations.
+
+I would be excited for the opportunity to bring this experience and passion to the innovative work being done at [Company Name]. I’ve long admired [something specific about the company or a recent project], and I’d love to contribute to [a goal or value you share with them].
+
+Thank you for considering my application. I’ve attached my resume and would be happy to provide any further information or code samples upon request. I look forward to the possibility of speaking with you.
+
+Sincerely,
+[Your Name]

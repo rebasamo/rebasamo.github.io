@@ -13,20 +13,13 @@ toc_sticky: true
 ---
 
 # About Me
-<font style="opacity: 0.7" size= "3">
-I am a young programmer on the way of refining my programming abilities as well as forging new ones on the way. Very interested in the procedural code as well as instancing. Something between Minecraft and Cube World would be the environment I would like to reproduce in a handmade engine as I am learning. Generate a procedural terrain, handle the information of the world, discard the unnecessary information and render all with the best performance possible are some of the main features I want to learn.
+<!--<font style="opacity: 0.7" size= "3">-->
 
-<br>
-Another topic I love is Space. Since very young I got absorbed with the documentaries about all the crazy stuff that is happening in the space. Games like Elite Dangerous or Star Citizen were some of my first ideal games to program myself I thought of when I started studying programming. Clearly not yet knowing all the work that entails.
+I am a C++ programmer with six years of experience in the video game industry, having worked at two companies on multiple projects. As a generalist, I have a broad skill set that allows me to work across different areas of game development, from gameplay systems to engine-level programming and performance optimization. This versatility enables me to adapt quickly to new challenges, collaborate effectively with different teams, and contribute to various aspects of a project. I am passionate about writing high-quality, maintainable code and continuously expanding my knowledge to create efficient and scalable solutions.
 
-<br>
-Currently looking for a job, if possible, in a company with games with those characteristics where to learn in depth every nook of the algorithms.
+I am particularly interested in unusual game techniques, exploring innovative ways to push technical and creative boundaries. On my last project on MPG I had the opportunity to develop a gameplay mechanic that allowed dynamic tinting of any object in a scene, bringing a unique visual and interactive layer to gameplay. Currently, I am developing a template that leverages real-world data—such as elevation maps and city layouts—to enable the creation of games based on real geographic locations, opening new possibilities for immersive world-building and procedural content generation.
 
-<br>
-<br>
-
-I easily immerse myself in a piece of code until it results in what I'm looking for, which is one of my strengths.
-</font>
+<!--</font>-->
 <br>
 
 # Education
@@ -40,7 +33,8 @@ I easily immerse myself in a piece of code until it results in what I'm looking 
 ## [SHU](https://www.shu.ac.uk/) (Sheffiel Hallam University)
 <a href="https://www.google.com/maps/place/Sheffield+Hallam+University/@53.3782423,-1.4680749,17z/data=!3m1!4b1!4m5!3m4!1s0x487982831b2243e9:0x37add1086f57be4f!8m2!3d53.3782391!4d-1.4658862" ><i class= "fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> Sheffield, UK</a>
 - [BSc(honours) Computer Science for Games](https://www.shu.ac.uk/courses/computing/bsc-honours-computer-science-for-games/full-time/2019)
-- Studying (2018-2019)
+- Graduated 2019
+- **Bachelor of Science** with **First Class Honours**
 
 
 # Experience
@@ -52,27 +46,17 @@ I easily immerse myself in a piece of code until it results in what I'm looking 
   - [{{post.title}}]({{post.url}})
   {% endfor %}
 
-### Currently Working
+### Ongoing Projects
 
- - UE4-PS4 game
-
-Currently working in a team of 5 programmers and 3 artists aiming for a game to work in a PS4. That project is made for the subject of 3D Games Prototyping in [SHU](https://www.shu.ac.uk/). The game will be finished around the beginning of May.
-
-- Asset Management External Tool
-
-That tool aim is to provide a way to work simultaneously in your assets while they are being compiled and prepared for different platforms or environments. The tool will work in second plane watching over a folder looking for updates. The file changed will be recompiled and sent to the different folders for the different profiles configured. 
-
-The tool is being programmed in a way that any command related function can be called for a specific file. An external command-line tool or a Python script, both are viable to work with this tool.
-
-- Self made Instancing based Engine
-
-That is one of the projects I am more excited about, but, at the same time is the one I have less time to work with. 
-
-The aim is to have a good customizable engine capable of handle the more objects the better. I want to learn how to send most of the information at the same shader (OpenGL for now) and how to handle it. Most of that has been done in one of my previous projects [3D Engine](/portfolio/2019-02-08-3DEngine/) but it was implemented in the mid-end development, so it wasn't working at his maximum capacity as it had been adapted to the code at that time.
+{% assign tagged_posts = site.portfolio | where: "tags", "Ongoing" %}
+{% for post in tagged_posts %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
 
 ## Others
 
 ### Previous Works
+
   {% for work in site.works %}
   - [{{work.title}}]({{work.url}})
   {% endfor %}
@@ -82,43 +66,27 @@ The aim is to have a good customizable engine capable of handle the more objects
 ## Sports
 
 - Judo
-	- Main sport
-	- 15 years of experience
-	- Brown belt
-
 - Tennis
-	- 3 years of experience
+- Paddle Tennis
 
-## Gaming
+## Favourite Games
 
-### Favourite Games
+- Elite Dangerous
+- Terraria
+- Minecraft
+- Monster Hunter
 
-- Exploration/Sandbox
-  - Elite Dangerous
-  - Terraria
-  - Starbound
-  - Minecraft
-  - Monster Hunter
+- Dead Cells
+- Enter the Gungeon
+- The Binding of Isaac
 
-- Roguelite
-  - Dead Cells
-  - Enter the Gungeon
-  - The Binding of Isaac
+- Borderlands
+- Magicka
 
-- Funny Experience
-  - Borderlands (Saga)
-  - Magicka (Saga)
+- Crypt of the NecroDancer
+- Rift of the NecroDancer
+- Beat Saber
+- To The Moon / Finding Paradise
 
-- Beats
-  - Crypt of the NecroDancer
-  - Beat Saber
-
-- Narrative
-	- To The Moon / Finding Paradise
-
-- Metroidvania
-  - Hollow Knight
-  - Ori and the Blind Forest
-
-- MOBA
-  - League of Legends
+- Hollow Knight
+- Ori and the Blind Forest

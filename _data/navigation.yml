@@ -6,8 +6,8 @@ main:
     url: /cv/
   - title: "Portfolio"
     url: /portfolio/
-  - title: "Previous Works"
-    description: Previous work places.
+  - title: "Jobs"
+    description: Previous Jobs.
     url: /works/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/

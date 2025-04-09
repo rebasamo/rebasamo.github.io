@@ -29,14 +29,12 @@
 {% for tag in all_tags %}
   {% assign tagged_posts = entries | where: 'tags', tag %}
   
-  <section id="{{ tag | slugify | downcase }}" class="taxonomy__section">
+  <section id="{{ tag | slugify | downcase }}" class="section-{{page.entries_layout | default: 'list' }}">
     <h2 class="archive__subtitle">{{ tag }}</h2>
-    <div class="entries-{ {page.entries_layout | default: 'list' }}">
   <!-- Loop through each post with the current tag and render archive-single.html -->
   {% for post in tagged_posts %}
     {% include archive-single.html %}
   {% endfor %}
-</div>
 <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
 </section>
 {% endfor %}
